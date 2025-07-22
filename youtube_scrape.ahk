@@ -1,10 +1,8 @@
-﻿urlTest := "https://www.youtube.com/feed/storefront?bp=EgCSAQMI9gOiBQIoBg%3D%3D"
-browser := "C:\Users\danie\Downloads\chrome-win\chrome-win\chrome.exe"
-
-SavePage(browser, url)
+﻿
+SavePage()
 {
 	path := "C:\Users\danie\OneDrive\Desktop\page_scrapes"
-	Run (browser, url)
+	Run "chrome.exe https://www.youtube.com/feed/storefront?bp=EgCSAQMI9gOiBQIoBg%3D%3D"
 	sleep (5000)
 	send ("^u")
 	sleep (3000)
@@ -19,4 +17,4 @@ SavePage(browser, url)
 	send ("!s")
 }
 
-SavePage(browser, urlTest)
+SavePage()
