@@ -1,9 +1,9 @@
 PressFPage()
 {
         Run "chrome.exe about:blank"
-        sleep (1000)
+        sleep (100)
 	send ("^{F4}")
-	sleep (1000)
+	sleep (100)
        	send ("f")
 }
 
