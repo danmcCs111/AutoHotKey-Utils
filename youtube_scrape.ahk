@@ -15,6 +15,7 @@ SavePage()
 	SendInput "{enter}"
 	sleep 1000
 	send ("!s")
+	sleep 1000
 }
 
 SavePage()
