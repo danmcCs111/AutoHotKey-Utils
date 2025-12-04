@@ -3,4 +3,4 @@
 using
 https://www.autohotkey.com/
 
-set autohokey in system path
+*set autohotkey in system path
