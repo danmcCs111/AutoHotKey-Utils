@@ -1,12 +1,11 @@
 FullscreenPage()
-{
-        Run "chrome.exe about:blank"
-        sleep (100)
-	send ("^{F4}")
-	sleep (100)
-       	send ("{F11}")
-	sleep (100)
-       	send ("f")
+{	
+	;target_pid := 27512 ; Replace with PID
+	;WinTitle_PID := "ahk_pid " . target_pid
+	
+	WinActivate ("ahk_exe chrome.exe")
+	Send "{F11}"
+	Send "f"
 }
 
 FullscreenPage()
