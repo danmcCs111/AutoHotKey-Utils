@@ -1,10 +1,12 @@
-﻿
+﻿#include readPid.ahk
+
 PausePage()
 {
-	;target_pid := 27512 ; Replace with PID
-	;WinTitle_PID := "ahk_pid " . target_pid
+	target_pid := readPid()
+	WinTitle_PID := "ahk_pid " . target_pid
 	
-	WinActivate ("ahk_exe chrome.exe")
+	;WinActivate ("ahk_exe chrome.exe")
+	WinActivate (WinTitle_PID)
 	Send "{space}"
 }
 
