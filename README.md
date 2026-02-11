@@ -2,5 +2,4 @@
 
 using
 https://www.autohotkey.com/
-
-*set autohotkey in system path
+windows install in install/install.cmd
