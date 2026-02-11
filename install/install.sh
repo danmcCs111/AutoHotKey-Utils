@@ -6,5 +6,5 @@ then
 	#no op
 	echo "no linux ahk"
 else
-	./install.cmd	
+	$(dirname "$0")/install.cmd	
 fi
