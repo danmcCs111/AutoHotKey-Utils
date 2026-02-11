@@ -1,10 +1,14 @@
 #!/bin/bash
 typeOs=`uname`
+orgDir=`pwd`
+cd $(dirname "$0")
 
 if [[ "$typeOs" == "Linux" ]]
 then
 	#no op
 	echo "no linux ahk"
 else
-	$(dirname "$0")/install.cmd	
+	/install.cmd	
 fi
+
+cd $orgDir
