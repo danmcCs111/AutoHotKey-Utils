@@ -8,7 +8,7 @@ then
 	#no op
 	echo "no linux ahk"
 else
-	/install.cmd	
+	./install.cmd	
 fi
 
 cd $orgDir
