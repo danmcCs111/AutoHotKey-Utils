@@ -1,7 +1,7 @@
 
-readPid()
+readPid(fp)
 {
-	filePath := 'pid.txt' ; Define the file path
+	filePath := fp
 	try {
 		fileContent := FileRead(filePath)
 	} catch as ex {

@@ -1,12 +1,12 @@
 #include readPid.ahk
 
-EscPage()
+sendKey()
 {
-	target_pid := readPid()
+	target_pid := readPid(A_Args[1])
 	WinTitle_PID := "ahk_pid " . target_pid
 	
 	WinActivate (WinTitle_PID)
-	count := 0
+	count := 1
 	while count < A_Args.Length 
 	{
 		count += 1
@@ -14,4 +14,4 @@ EscPage()
 	}
 }
 
-EscPage()
+sendKey()
