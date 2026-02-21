@@ -1,13 +1,17 @@
 #include readPid.ahk
 
-FullscreenPage()
-{	
+EscPage()
+{
 	target_pid := readPid()
 	WinTitle_PID := "ahk_pid " . target_pid
 	
 	WinActivate (WinTitle_PID)
-	Send "{F11}"
-	Send "f"
+	count := 0
+	while count < A_Args.Length 
+	{
+		count += 1
+		Send A_Args[count]
+	}
 }
 
-FullscreenPage()
+EscPage()
