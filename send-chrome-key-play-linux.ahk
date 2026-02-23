@@ -1,0 +1,2 @@
+WinActivate, chrome
+Send "{space}"
