@@ -5,7 +5,7 @@ cd $(dirname "$0")
 
 if [[ "$typeOs" == "Linux" ]]
 then
-	#no op
+	./install-ahk-x11.sh
 	echo "no linux ahk"
 else
 	./install.cmd	
