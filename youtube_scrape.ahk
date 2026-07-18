@@ -3,7 +3,7 @@ SavePage()
 {
 	path := "C:\Users\danie\OneDrive\Desktop\page_scrapes"
 	Run "chrome.exe https://www.youtube.com/feed/storefront?bp=EgCSAQMI9gOiBQIoBg%3D%3D"
-	sleep (5000)
+	sleep (10000)
 	send ("^u")
 	sleep (3000)
 	send ("^s")
